@@ -62,6 +62,6 @@ class DeepfakeDetector:
 # Model\resnet50_model_ep10.keras
 
 detector = DeepfakeDetector("Model/resnet50_model_ep10.keras")
-result = detector.predict_video("Demo_video/Real/aktnlyqpah.mp4", explain=True)
+result = detector.predict_video("Demo_video/Fake/Fake_video(1).mp4", explain=True)
 print(result)
 # -> {'label': 'FAKE', 'confidence': 0.78, 'lime_path': '/tmp/tmpabcd.png'}
